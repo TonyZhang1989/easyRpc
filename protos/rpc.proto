@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package default;
+
+// The greeting service definition.
+service CmdExecutor {
+  // Sends a command
+  rpc SendCmd (RpcRequest) returns (RpcReply) {}
+}
+
+// The request message containing the user's name.
+message RpcRequest {
+  string command = 1;
+}
+
+// The response message containing the greetings
+message RpcReply {
+  int32 code = 1;
+  string msg = 2;
+}

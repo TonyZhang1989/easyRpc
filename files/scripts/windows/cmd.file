@@ -1,0 +1,1 @@
+D:\protoc-3.13.0-win32\bin\protoc.exe -I protos/ protos/*proto --go_out=plugins=grpc:./protos/
